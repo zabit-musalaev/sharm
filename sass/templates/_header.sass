@@ -1,0 +1,171 @@
+.header
+  position: relative
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+  &__logo
+    max-width: 154px
+    padding-top: 10px
+  &__right-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+    padding-top: 30px
+    margin-bottom: 30px
+  &__phone
+    margin-right: 15px  
+  
+
+.menu
+  margin-left: auto
+  margin-right: 27px
+  &__link
+    font-family: 'Montserrat', sans-serif
+    font-weight: 500
+    text-decoration: none
+    text-transform: uppercase
+    color: #333333
+    &:not(:last-child)
+      margin-right: 15px
+    
+.sticky
+  width: 80px
+  height: 778px
+  background-color: #fff
+  position: fixed
+  top: 0
+  left: 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  flex-direction: column
+  border: 1px solid #eeeeee
+  z-index: 2
+  &__content
+    display: none
+  &__text
+    width: 200px
+    color: #888888
+    font-family: Montserrat
+    font-weight: 500
+    letter-spacing: 0.72px
+    text-transform: uppercase
+    transform: rotate(-90deg)
+    margin-top: 360px
+  &__burger
+    width: 50px
+    height: 60px
+    position: relative
+    left: 10px
+    top: 31px
+    & span
+      margin: 0
+      position: absolute
+      display: block
+      width: 25px
+      height: 2px
+      background-color: #555555
+      &::before
+        content: ''
+        display: block
+        height: 2px
+        background-color: #555555
+        transform: translateY(-7px)
+        width: 15px
+        margin: auto
+        transition: 0.2s
+      &::after
+        content: ''
+        display: block
+        height: 2px
+        background-color: #555555
+        transform: translateY(7px)
+        width: 15px
+        margin: auto
+        margin-top: -2px
+        transition: 0.2s
+    &-active
+      & span
+        height: 0
+        &::before
+          transform: rotate(45deg)
+          width: 25px
+        &::after
+          transform: rotate(-45deg)
+          width: 25px
+  &__social
+    margin-bottom: 27px
+  &__item
+    margin-top: 24px
+    width: 20px
+    height: 20px
+
+.sticky
+  &-active
+    width: 1073px
+    height: 779px
+    background-color: #fff
+    transition: 1.2s
+    z-index: 99
+    & .sticky
+      &__content
+        display: flex
+        flex-direction: column
+      &__burger
+        position: absolute
+        right: 0
+        top: 43px
+        margin-left: auto
+        margin-right: 43px
+      &__social
+        margin-right: auto
+        margin-left: 390px
+        display: flex
+        margin-bottom: 109px
+      &__item
+        margin-right: 15px
+      &__text
+        display: none
+      
+.content
+  position: relative
+  top: -25px
+  max-width: 500px
+  margin-right: auto
+  margin-left: 390px
+  &__logo
+    width: 153px
+    height: 170px
+    margin-top: 58px
+    margin-bottom: 97px
+    & img
+      width: 100%
+  &__menu
+    margin: 0
+    & ul
+      display: flex
+      flex-direction: column
+  &__link:not(:last-child)
+    margin-bottom: 25px
+  &__buttons
+    width: 400px
+    margin-top: 87px
+  &__phone
+    margin-right: 15px
+
+.overlay
+  width: 100%
+  height: 100%
+  position: fixed
+  background: rgba(#000000, 0.5)
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+
+.over
+  width: 100%
+  height: 100%
+  z-index: 2
+  color: #272727

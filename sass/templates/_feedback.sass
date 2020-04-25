@@ -1,0 +1,49 @@
+.feedback
+  background-color: #f6f6f6
+  padding-top: 58px
+  &__wrap
+    position: relative
+    & span
+      position: absolute
+      width: 100%
+      max-width: 104.5%
+      height: 1px
+      background-color: #d8d8d8
+  &__row
+    padding-top: 39px
+    padding-bottom: 72px
+    display: flex
+    justify-content: space-between
+    align-items: start
+  &__col-2
+    width: 351px
+    text-align: center
+  &__col-3
+    width: 373px
+    text-align: center
+  &__description
+    width: 201px
+    margin-bottom: 35px
+  &__title
+    margin-bottom: 31px
+    &::after
+      position: absolute
+      content: ''
+      top: 0
+
+  &--text
+    color: #333333
+    font-family: "Minion Medium it"
+    font-size: 18px
+    font-weight: 400
+    margin-bottom: 24px
+  &--line
+    position: relative
+    &::after
+      position: absolute
+      content: ''
+      width: 1px
+      height: 186px
+      top: 0
+      right: -50px
+      background-color: #d8d8d8

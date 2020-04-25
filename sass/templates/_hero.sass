@@ -1,0 +1,75 @@
+.hero
+  &__row
+    position: relative
+    display: flex
+  &__image
+    position: absolute
+    left: 300px
+    top: 0
+    z-index: -1
+  &__title
+    font-family: "Minion Semibold"
+    font-size: 40px
+    font-weight: 400
+    color: #333333
+    margin-top: 70px
+    margin-bottom: 36px
+  &__description
+    max-width: 263px
+    margin-bottom: 41px
+  &__navigation
+    width: 230px
+    display: flex
+    align-items: center
+    margin-left: auto
+    margin-right: 124px
+    margin-top: 23px
+     
+
+  .swiper-button-prev,
+  .swiper-button-next
+    position: static
+    &::after
+      display: none
+
+.swiper-button-prev
+  width: 72px
+  height: 9px
+  background: url(../img/arrow-l.png) no-repeat
+  margin-right: 15px
+.swiper-button-next
+  width: 72px
+  height: 9px
+  background: url(../img/arrow.png) no-repeat
+.swiper-pagination
+  position: static
+  margin-bottom: 25px
+  margin-right: 15px
+.swiper-pagination-bullet
+  width: 5px
+  height: 5px
+  &:not(:last-child) 
+    margin-right: 5px
+.swiper-pagination-bullet-active
+  background-color: #555555;
+.swiper-button-disabled
+  opacity: 0.2
+
+.swiper-container
+  position: absolute
+  max-width: 1270px
+  top: -80px
+
+.swiper-wrapper
+  height: 620px
+.swiper-slide
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+
+.swiper-slide-content 
+  display: flex
+  flex-flow: column
+  justify-content: center
+  height: 100%
