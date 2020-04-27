@@ -15,7 +15,10 @@ $(document).ready(function () {
     e.preventDefault;
     $(this).toggleClass('sticky__burger-active');
     $('.sticky').toggleClass('sticky-active');
-    $('.over').toggleClass('overlay');
+		$('.over').toggleClass('overlay');
+		$('.sticky__social').toggleClass('sticky__social-active');
+		$('.sticky__text').toggleClass('sticky__text-active');
+		$('.content').toggleClass('content-active');
   })
 
 }); 

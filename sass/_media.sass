@@ -1,3 +1,8 @@
+@media screen and ( max-width: 1764px )
+  .feedback
+    &--line
+      &::after
+        display: none
 @media screen and ( max-width: 1500px )
   .header
     margin-right: 80px
@@ -36,13 +41,14 @@
   .menu__link:not(:last-child)
     margin-right: 2px
   .instagram-line
-    display: none
+    display: none 
   .insta
     &__wrap
       justify-content: center
-      flex-wrap: wrap
+      padding-left: 10px
     &__img-3
       display: none
+
     
 @media screen and ( max-width: 1132px )
   .menu__link:not(:last-child)
@@ -65,28 +71,155 @@
 
   
 @media screen and ( max-width: 768px )
+  
   .header
+    padding-top: 80px
     &__buttons
       display: none
+    &__logo
+      margin-left: 10px
+
+  .hero
+    &__description
+      display: none
+    &__title
+      margin-left: 180px
+      font-size: 26px
+      width: 450px
+      & span
+        display: none
+
+  .swiper-slide
+    display: inline-block
+
   .sticky
     width: 100%
+    transform: translateX(0)
     height: 80px
-    &__burger
-      margin-right: auto
-    &-active
-      height: 300px
-    &__social
-      display: flex
-      position: absolute
-      top: 0
-      right: 0
-    &__item
-      margin-right: 20px
+    &__right
+      flex-direction: row
+      width: 100%
     &__text
+      margin-top: 0
+      transform: rotate(0)
+  .about
+    margin-bottom: 40px
+    &__wrap
+      display: block
+    &__col-2
+      position: static
+    &__images
+      display: flex
+    &__img-1
+      margin-left: 0
+      width: 380px
+      margin-top: 0
+      & img
+        width: 100%
+    &__img-2
+      width: 380px
+      & img
+        width: 100%
+    &__img-3
+      max-width: initial
+      width: 100%
+      border: 5px solid #fff
+    &__images
+      & img
+        position: static
+    &__description
+      max-width: 100%
+    &__more
+      display: block
+      margin-bottom: 20px
+    &__description-2
+      max-width: fit-content
+
+  .services
+    &__block
+      right: 20px
+
+  .feedback
+    padding-top: 0
+    &__wrap
+      & span
+        top: 180px
+    &__title
+      margin-bottom: 10px
+    &__row
+      flex-wrap: wrap
+      padding-bottom: 40px
+    &__col-1
+      width: 100%
+    &__col-2
+      width: 370px
+    &__description
+      width: 100%
+      margin-bottom: 15px
+    &__more
+      display: block
+      margin-bottom: 60px
+
+  .insta__img:not(:last-child)
+    margin-right: 10px
+    width: 242px
+  .instagram-line
+    display: block
+  .insta
+    &__wrap
+      padding-top: 50px
+      padding-bottom: 50px
+    &__inner
+      & span
+        width: 70px
+        right: 10px
+
+  
+@media screen and ( max-width: 568px )
+  .insta
+    &__wrap
+      flex-wrap: wrap
+      justify-content: center
+      align-items: center
+    &__img:not(:last-child)
+      margin-right: 10px
+      width: 170px
+    &__inner
+      text-align: center
+      & span
+        display: none
+    &__more
+      display: block
+      margin-left: 10%
+
+  .footer
+    padding-top: 30px
+    &__menu
+      margin-top: 100px
+      flex-wrap: wrap
+      justify-content: center
+    & a
+      text-align: center
+      flex-basis: 30%
+      margin-bottom: 10px
+
+    &__logo
+      margin-right: 0
       position: absolute
       top: 0
-      right: 0
-      transform: rotate(0deg)
-      margin-top: 25px
-      margin-right: 50px
-  
+      left: calc( 50% - 45px )
+    &__social
+    &__tel
+      &:first-child 
+        margin-right: 20px
+        &::after
+          left: 145px
+          bottom: 2px
+    &__phones
+      text-align: center
+    &__adress
+      text-align: center
+      padding: 0 5px
+    &__copyrightes
+      text-align: center
+    
