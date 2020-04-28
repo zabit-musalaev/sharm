@@ -765,7 +765,8 @@ body {
     align-items: center; }
   .footer__logo {
     width: 93px;
-    margin-right: 25px; }
+    margin-right: 25px;
+    margin-left: 35px; }
   .footer__line {
     position: absolute;
     display: block;
@@ -791,16 +792,6 @@ body {
     color: #333333;
     font-size: 20px;
     font-weight: 500; }
-    .footer__tel:first-child {
-      margin-right: 40px; }
-      .footer__tel:first-child::after {
-        position: absolute;
-        content: '';
-        width: 2px;
-        height: 20px;
-        background-color: #333333;
-        bottom: 0;
-        left: 160px; }
   .footer__adress {
     display: flex;
     justify-content: center;
@@ -854,7 +845,8 @@ body {
 
 @media screen and (max-width: 1200px) {
   h1, h2, h3, h4, p, a {
-    margin-left: 10px; }
+    margin-left: 10px;
+    margin-right: 10px; }
   .menu__link:not(:last-child) {
     margin-right: 2px; }
   .instagram-line {
@@ -863,7 +855,13 @@ body {
     justify-content: center;
     padding-left: 10px; }
   .insta__img-3 {
-    display: none; } }
+    display: none; }
+  .footer__copyrightes {
+    text-align: center;
+    padding: 0 10px; }
+  .footer__adress {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 @media screen and (max-width: 1132px) {
   .menu__link:not(:last-child) {
@@ -908,8 +906,45 @@ body {
       flex-direction: row;
       width: 100%; }
     .sticky__text {
+      text-align: right;
       margin-top: 0;
+      margin-left: auto;
+      margin-right: 28px;
       transform: rotate(0); }
+    .sticky__content {
+      position: absolute;
+      opacity: 1;
+      transition: 1.2s ease;
+      background: #ffffff;
+      width: 100%;
+      height: 702px;
+      transform: translateX(-100%); }
+    .sticky__burger {
+      transition: 1.5s ease; }
+      .sticky__burger-active {
+        left: 90%; }
+        .sticky__burger-active span {
+          top: 10px; }
+    .sticky__social {
+      display: flex; }
+    .sticky__item {
+      margin-right: 20px;
+      margin-right: 10px; }
+    .sticky__social-cnt {
+      margin-right: auto;
+      margin-left: 80px; }
+  .content-active {
+    transform: translateX(0px); }
+  .content__logo {
+    margin-right: auto;
+    margin-left: 70px; }
+  .content__menu {
+    display: block;
+    margin-right: auto;
+    margin-left: 80px; }
+  .content__buttons {
+    margin-right: auto;
+    margin-left: 80px; }
   .about {
     margin-bottom: 40px; }
     .about__wrap {
@@ -954,8 +989,6 @@ body {
     .feedback__row {
       flex-wrap: wrap;
       padding-bottom: 40px; }
-    .feedback__col-1 {
-      width: 100%; }
     .feedback__col-2 {
       width: 370px; }
     .feedback__description {
@@ -973,8 +1006,10 @@ body {
     padding-top: 50px;
     padding-bottom: 50px; }
   .insta__inner span {
-    width: 70px;
-    right: 10px; } }
+    width: 60px;
+    right: 10px; }
+  .footer__phones {
+    text-align: center; } }
 
 @media screen and (max-width: 568px) {
   .insta__wrap {
@@ -995,8 +1030,7 @@ body {
     padding-top: 30px; }
     .footer__menu {
       margin-top: 100px;
-      flex-wrap: wrap;
-      justify-content: center; }
+      flex-wrap: wrap; }
     .footer a {
       text-align: center;
       flex-basis: 30%;
@@ -1005,7 +1039,7 @@ body {
       margin-right: 0;
       position: absolute;
       top: 0;
-      left: calc( 50% - 45px); }
+      left: calc( 50% - 80px); }
     .footer__tel:first-child {
       margin-right: 20px; }
       .footer__tel:first-child::after {
@@ -1015,6 +1049,31 @@ body {
       text-align: center; }
     .footer__adress {
       text-align: center;
-      padding: 0 5px; }
+      padding: 0 10px; }
     .footer__copyrightes {
-      text-align: center; } }
+      text-align: center; }
+  .content {
+    height: 100vh; }
+    .content__logo {
+      width: 80px;
+      height: 90px;
+      margin-left: 15px; }
+    .content__menu {
+      margin-left: 20px; }
+    .content__buttons {
+      width: auto;
+      margin-left: 20px; }
+    .content__phone {
+      width: 170px;
+      display: block;
+      margin-bottom: 20px; }
+    .content__submit {
+      font-size: 10px;
+      width: 170px; }
+  .sticky {
+    height: 50px; }
+    .sticky__social-cnt {
+      margin-left: 20px;
+      margin-top: 0; }
+    .sticky__burger-active {
+      left: 85%; } }
