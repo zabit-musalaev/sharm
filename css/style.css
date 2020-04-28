@@ -811,6 +811,8 @@ body {
 
 @media screen and (max-width: 2000px) {
   .ipad {
+    display: none; }
+  .vasilenko__bottom-line {
     display: none; } }
 
 @media screen and (max-width: 1764px) {
@@ -1042,6 +1044,8 @@ body {
       width: 100%; } }
 
 @media screen and (max-width: 568px) {
+  .vasilenko__bottom-line {
+    display: block; }
   .title {
     font-size: 20px;
     margin-bottom: 10px; }
@@ -1084,6 +1088,8 @@ body {
     width: 95%; }
   .feedback__more {
     margin-bottom: 45px; }
+  .feedback-line-2 span {
+    top: -100px; }
   .insta__wrap {
     flex-wrap: wrap;
     justify-content: center;
@@ -1100,8 +1106,6 @@ body {
   .insta__more {
     display: none;
     margin-left: 10%; }
-  .vasilenko__bottom-line {
-    top: 190px; }
   .footer {
     padding-top: 30px; }
     .footer__menu {
@@ -1120,7 +1124,8 @@ body {
       left: 145px;
       bottom: 2px; }
     .footer__phones {
-      text-align: center; }
+      text-align: center;
+      color: #333333; }
     .footer__adress {
       text-align: center;
       padding: 0 10px; }
@@ -1165,3 +1170,17 @@ body {
     margin-bottom: 12px; }
   .ipad__more {
     font-size: 10px; } }
+
+@media screen and (max-width: 375px) {
+  .about__img {
+    width: 187px;
+    height: 211px; }
+  .services__wrap {
+    justify-content: center; }
+  .services__block {
+    right: auto; } }
+
+@media screen and (max-width: 320px) {
+  .about__img {
+    width: 160px;
+    height: 185px; } }
