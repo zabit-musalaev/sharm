@@ -809,6 +809,10 @@ body {
 .menu__link:not(:last-child) {
   margin-right: 22px; }
 
+@media screen and (max-width: 2000px) {
+  .ipad {
+    display: none; } }
+
 @media screen and (max-width: 1764px) {
   .feedback--line::after {
     display: none; } }
@@ -1018,22 +1022,24 @@ body {
     right: 10px; }
   .footer__phones {
     text-align: center; }
-  .ipad__heading {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px; }
-  .ipad__logo {
-    display: block;
-    margin-left: 0;
-    margin-right: 30px; }
-  .ipad__title {
-    font-size: 26px;
-    max-width: 482px;
-    margin-bottom: 20px; }
-  .ipad__image {
-    max-width: 768px;
-    padding: 0 10px;
-    width: 100%; } }
+  .ipad {
+    display: block; }
+    .ipad__heading {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px; }
+    .ipad__logo {
+      display: block;
+      margin-left: 0;
+      margin-right: 30px; }
+    .ipad__title {
+      font-size: 26px;
+      max-width: 482px;
+      margin-bottom: 20px; }
+    .ipad__image {
+      max-width: 768px;
+      padding: 0 10px;
+      width: 100%; } }
 
 @media screen and (max-width: 568px) {
   .title {
