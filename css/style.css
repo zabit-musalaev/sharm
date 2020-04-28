@@ -1068,12 +1068,22 @@ body {
       margin-bottom: 10px; }
   .services__block {
     right: 0; }
+  .feedback__wrap span {
+    top: 150px;
+    width: 300px;
+    left: calc( 50% - 150px); }
   .feedback__row {
     padding-top: 30px; }
   .feedback--text {
     font-size: 14px; }
   .feedback__col-2 {
     padding-bottom: 20px; }
+  .feedback__col-3 {
+    margin-top: 20px; }
+  .feedback__description {
+    width: 95%; }
+  .feedback__more {
+    margin-bottom: 45px; }
   .insta__wrap {
     flex-wrap: wrap;
     justify-content: center;
@@ -1090,6 +1100,8 @@ body {
   .insta__more {
     display: none;
     margin-left: 10%; }
+  .vasilenko__bottom-line {
+    top: 190px; }
   .footer {
     padding-top: 30px; }
     .footer__menu {

@@ -305,12 +305,25 @@
       right: 0
 
   .feedback
+    &__wrap
+      & span
+        top: 150px
+        width: 300px
+        left: calc( 50% - 150px )
     &__row
       padding-top: 30px
     &--text
       font-size: 14px
+    &__bottom-line
+
     &__col-2
       padding-bottom: 20px
+    &__col-3
+      margin-top: 20px
+    &__description
+      width: 95%
+    &__more
+      margin-bottom: 45px
   .insta
     &__wrap
       flex-wrap: wrap
@@ -328,6 +341,9 @@
     &__more
       display: none
       margin-left: 10%
+
+  .vasilenko__bottom-line
+    top: 190px
 
   .footer
     padding-top: 30px
