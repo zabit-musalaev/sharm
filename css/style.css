@@ -869,7 +869,7 @@ body {
 
 @media screen and (max-width: 1125px) {
   .menu__link:not(:last-child) {
-    margin-right: -5px; }
+    margin-right: 5px; }
   .header {
     margin-right: 30px; }
   .menu {
@@ -883,25 +883,31 @@ body {
 
 @media screen and (max-width: 768px) {
   .header {
-    padding-top: 80px; }
+    margin-bottom: 15px; }
     .header__buttons {
       display: none; }
     .header__logo {
       margin-left: 10px; }
-  .hero__description {
-    display: none; }
-  .hero__title {
-    margin-left: 180px;
-    font-size: 26px;
-    width: 450px; }
-    .hero__title span {
+    .header__logo {
+      display: none; }
+  .hero {
+    margin-left: 0; }
+    .hero__description {
+      display: none; }
+    .hero__title {
+      margin-left: 180px;
+      font-size: 26px;
+      width: 450px; }
+      .hero__title span {
+        display: none; }
+    .hero__row {
       display: none; }
   .swiper-slide {
     display: inline-block; }
   .sticky {
     width: 100%;
     transform: translateX(0);
-    height: 80px; }
+    height: 70px; }
     .sticky__right {
       flex-direction: row;
       width: 100%; }
@@ -946,6 +952,8 @@ body {
     margin-right: auto;
     margin-left: 80px; }
   .about {
+    margin-top: 0;
+    padding-top: 30px;
     margin-bottom: 40px; }
     .about__wrap {
       display: block; }
@@ -983,7 +991,7 @@ body {
   .feedback {
     padding-top: 0; }
     .feedback__wrap span {
-      top: 180px; }
+      top: 170px; }
     .feedback__title {
       margin-bottom: 10px; }
     .feedback__row {
@@ -1009,9 +1017,57 @@ body {
     width: 60px;
     right: 10px; }
   .footer__phones {
-    text-align: center; } }
+    text-align: center; }
+  .ipad__heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px; }
+  .ipad__logo {
+    display: block;
+    margin-left: 0;
+    margin-right: 30px; }
+  .ipad__title {
+    font-size: 26px;
+    max-width: 482px;
+    margin-bottom: 20px; }
+  .ipad__image {
+    max-width: 768px;
+    padding: 0 10px;
+    width: 100%; } }
 
 @media screen and (max-width: 568px) {
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px; }
+  .description {
+    font-size: 12px; }
+  .header {
+    margin-bottom: 0; }
+  .about {
+    padding-top: 10px;
+    margin-bottom: 30px; }
+    .about__title {
+      font-size: 20px;
+      margin-bottom: 10px; }
+    .about__description {
+      font-size: 12px;
+      margin-bottom: 20px; }
+    .about__more {
+      font-size: 10px; }
+    .about__img-1 {
+      width: 158px; }
+    .about__img-2 {
+      width: 158px; }
+    .about__img-3 {
+      margin-bottom: 10px; }
+  .services__block {
+    right: 0; }
+  .feedback__row {
+    padding-top: 30px; }
+  .feedback--text {
+    font-size: 14px; }
+  .feedback__col-2 {
+    padding-bottom: 20px; }
   .insta__wrap {
     flex-wrap: wrap;
     justify-content: center;
@@ -1076,4 +1132,16 @@ body {
       margin-left: 20px;
       margin-top: 0; }
     .sticky__burger-active {
-      left: 85%; } }
+      left: 85%; }
+  .ipad__heading {
+    align-items: flex-start;
+    margin-bottom: 20px; }
+  .ipad__logo {
+    width: 80px;
+    margin-right: 0; }
+  .ipad__title {
+    font-size: 18px;
+    line-height: 1.2em;
+    margin-bottom: 12px; }
+  .ipad__more {
+    font-size: 10px; } }
