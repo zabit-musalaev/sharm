@@ -197,7 +197,7 @@
 
   .services
     &__block
-      right: 20px
+      right: 25px
 
   .feedback
     padding-top: 0
@@ -316,15 +316,17 @@
       flex-wrap: wrap
       justify-content: center
       align-items: center
+      padding-bottom: 0
     &__img:not(:last-child)
       margin-right: 10px
-      width: 170px
+      width: 145px
+      margin-bottom: 18px
     &__inner
       text-align: center
       & span
         display: none
     &__more
-      display: block
+      display: none
       margin-left: 10%
 
   .footer
@@ -336,7 +338,6 @@
       text-align: center
       flex-basis: 30%
       margin-bottom: 10px
-
     &__logo
       margin-right: 0
       position: absolute
@@ -344,8 +345,6 @@
       left: calc( 50% - 80px )
     &__social
     &__tel
-      &:first-child 
-        margin-right: 20px
         &::after
           left: 145px
           bottom: 2px
@@ -356,6 +355,9 @@
       padding: 0 10px
     &__copyrightes
       text-align: center
+
+  .menu__link:not(:last-child) 
+    margin-right: -5px
     
   .content
     height: 100vh
