@@ -104,7 +104,22 @@
 
 
 
-
+  <div class="modal">
+    <div class="modal__dialog">
+      <div class="modal__close"></div>
+      <h3 class="modal__title">Оставить заявку</h3>
+      <form action="#" class="form modal__form">
+        <input type="text" class="input modal__input" placeholder="Имя">
+        <input type="tel" class="input modal__input">
+        <div class="modal__policy">
+          <input type="checkbox" name="policy" id="policyCheckbox" class="modal__checkbox" checked>
+          <p class="modal__text">Я принимаю условия конфиденциальности.</p>
+        </div>
+        <button type="submit" class="button modal__button">Отправить</button>
+      </form>
+      <!-- /.form modal__form -->
+    </div>
+  </div>
 
 
 
@@ -145,6 +160,8 @@
 
 
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>

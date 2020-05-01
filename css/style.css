@@ -1350,7 +1350,18 @@ img.sticky__whatsapp {
   .questions__description {
     margin-bottom: 20px; }
   .questions__wrap {
-    display: block; } }
+    display: block; }
+  .modal__dialog {
+    left: 0;
+    padding: 25px 20px; }
+  .modal__policy {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .modal__policy input {
+      flex-basis: 0; }
+  .modal__text {
+    margin-top: -15px; } }
 
 @media screen and (max-width: 375px) {
   .about__img {
