@@ -21,6 +21,8 @@ $(document).ready(function () {
 		$('.content').toggleClass('content-active');
   })
 
+  new WOW().init();
+
 }); 
 
   
