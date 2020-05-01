@@ -14,7 +14,6 @@
   &__logo
     width: 93px
     margin-right: 25px
-    margin-left: 35px
   &__line
     position: absolute
     display: block
@@ -30,17 +29,21 @@
     align-items: center
     margin-bottom: 25px
   &__icon
+    transition: 0.5s
     &:not(:last-child)
-      margin-right: 20px  
+      margin-right: 20px
+    &:hover
+      opacity: 0.5
   &__phones
     display: flex
     justify-content: center
     margin-bottom: 15px
   &__tel
     position: relative
-    color: #333333
     font-size: 20px
     font-weight: 500
+    & a
+      color: #333333
   &__adress
     display: flex
     justify-content: center
@@ -53,7 +56,9 @@
     justify-content: center
     color: #999999
     font-size: 14px
-    font-weight: 400 
+    font-weight: 400
+  &__wa-link
+    margin-right: 20px
 
 
 
