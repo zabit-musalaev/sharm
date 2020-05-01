@@ -27,7 +27,7 @@
         </nav>
         <div class="content__buttons">
           <a href="tel:+79882911665"><button class="button content__phone">+7 988 291 16 65</button></a>
-          <button class="button content__submit">Оставить заявку</button>
+          <button class="button content__submit" data-toggle='modal'>Оставить заявку</button>
 				</div>
 				<div class="sticky__social-cnt">
 					<div class="sticky__item"><a href="https://www.instagram.com/sharmmebel/"><img src="img/footer/footer-instagram.png" alt="" class="sticky__instagram"></a></div>
@@ -38,7 +38,7 @@
 				<a href="#" class="sticky__burger">
 					<span></span>
 				</a>
-				<a href="#" class="sticky__text">Оставить заявку</a>
+				<a href="#" class="sticky__text" data-toggle='modal'>Оставить заявку</a>
 				<div class="sticky__social">
 					<div class="sticky__item"><a href="https://www.instagram.com/sharmmebel/"><img src="img/footer/footer-instagram.png" alt="" class="sticky__instagram"></a></div>
 					<div class="sticky__item"><a href="https://wa.me/79285002271"><img src="img/footer/footer-whatsapp.png" alt="" class="sticky__whatsapp"></a></div>
@@ -65,7 +65,7 @@
           <!-- /.header__menu menu -->
           <div class="header__buttons">
             <a href="tel:+79882911665"><button class="button header__phone wow slideInDown">+7 988 291 16 65</button></a>
-            <button class="button header__submit wow slideInDown">Оставить заявку</button>
+            <button class="button header__submit wow slideInDown" data-toggle='modal'>Оставить заявку</button>
           </div>
           <!-- /.header__buttons -->
         </div>
@@ -250,6 +250,35 @@
 <!-- /.section insta -->
 
 
+
+<div class="modal">
+  <div class="modal__dialog">
+    <div class="modal__close"></div>
+    <h3 class="modal__title">Оставить заявку</h3>
+    <form action="#" class="form modal__form">
+      <input type="text" class="input modal__input" placeholder="Имя">
+      <input type="tel" class="input modal__input">
+      <div class="modal__policy">
+        <input type="checkbox" name="policy" id="policyCheckbox" class="modal__checkbox" checked>
+        <p class="modal__text">Я принимаю условия конфиденциальности.</p>
+      </div>
+      <button type="submit" class="button modal__button">Отправить</button>
+    </form>
+    <!-- /.form modal__form -->
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 <footer class="footer">
   <div class="container">
     <div class="footer__wrap">
@@ -280,17 +309,9 @@
 </footer>
 <!-- /.footer -->
 
-
-
-
-
-
-
-
-
-
   <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
   <script src="js/main.js"></script>
 </body>
