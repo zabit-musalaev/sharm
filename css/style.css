@@ -1192,11 +1192,14 @@ img.sticky__whatsapp {
     .ipad__title {
       font-size: 26px;
       max-width: 482px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-left: 10px; }
     .ipad__image {
       max-width: 768px;
       padding: 0 10px;
-      width: 100%; } }
+      width: 100%; }
+    .ipad__more {
+      margin-left: 10px; } }
 
 @media screen and (max-width: 568px) {
   .vasilenko__bottom-line {
@@ -1213,10 +1216,16 @@ img.sticky__whatsapp {
     margin-bottom: 30px; }
     .about__title {
       font-size: 20px;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      margin-left: 10px; }
+    .about__title-2 {
+      margin-left: 10px; }
     .about__description {
       font-size: 12px;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      margin-left: 10px; }
+    .about__description-2 {
+      margin-left: 10px; }
     .about__more {
       font-size: 10px; }
     .about__img-1 {
@@ -1233,14 +1242,18 @@ img.sticky__whatsapp {
     left: calc( 50% - 150px); }
   .feedback__row {
     padding-top: 30px; }
+  .feedback__title {
+    margin-left: 10px; }
   .feedback--text {
     font-size: 14px; }
   .feedback__col-3 {
     margin-top: 20px; }
   .feedback__description {
-    width: 95%; }
+    width: 95%;
+    margin-left: 10px; }
   .feedback__more {
-    margin-bottom: 45px; }
+    margin-bottom: 45px;
+    margin-left: 10px; }
   .feedback-line-2 span {
     top: -100px; }
   .signature-vasilenko::after {
@@ -1281,6 +1294,8 @@ img.sticky__whatsapp {
       position: absolute;
       top: 0;
       left: calc( 50% - 80px); }
+    .footer__icon {
+      margin-left: 10px; }
     .footer__tel::after {
       left: 145px;
       bottom: 2px; }
@@ -1334,7 +1349,9 @@ img.sticky__whatsapp {
     margin-bottom: 20px; }
   .ipad__logo {
     width: 80px;
-    margin-right: 0; }
+    margin-right: 0;
+    margin-left: 3px;
+    margin-top: -10px; }
   .ipad__title {
     font-size: 18px;
     line-height: 1.2em;
