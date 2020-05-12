@@ -34,11 +34,17 @@
       margin-right: 5px
   .menu__link:not(:last-child)
     margin-right: 10px
+  .insta
+    &__wrap
+      & a
+        margin-right: 0
+
 
 @media screen and ( max-width: 1265px )
   .header
     &__logo
       margin-left: 80px
+      
 
 @media screen and ( max-width: 1200px )
   h1, h2, h3, h4, p, a
@@ -133,12 +139,13 @@
     &__burger
       transition: 1.5s ease
       &-active
-        left: 90%
+        left: 85%
         & span
-          top: 10px
+          top: 30px
+          left: 12px
     &__social
       display: flex
-      margin-right: 20px
+      margin-right: 35px
     &__item
       margin-right: 20px
       &:last-child
@@ -368,6 +375,8 @@
       justify-content: center
       align-items: center
       padding-bottom: 0
+      & a
+        margin-left: 0
     &__img:not(:last-child)
       margin-right: 10px
       width: 145px
@@ -436,13 +445,15 @@
       font-size: 10px
       width: 170px
   .sticky
-    height: 50px
+    height: 40px
     &__social-cnt
       margin-left: 20px
       margin-top: 0
     &__burger
       &-active
-        left: 85%
+        left: 75%
+    &__social
+      margin-right: 10px
 
   .ipad
     &__heading
@@ -483,10 +494,17 @@
       margin-bottom: 15px
     & input:nth-child(3)
       margin-top: 0
+      margin-bottom: 10px
     &__down
       width: 100%
+      display: flex
+      flex-direction: column
     &__policy
-      display: none
+      order: -1
+      font-size: 12px
+      margin-bottom: 10px
+      & br
+        display: none
     &__button
       width: 100%
       margin: auto

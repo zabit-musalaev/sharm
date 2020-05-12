@@ -30,18 +30,8 @@
     position: relative
     &:not(:last-child)
       margin-right: 15px
-    &::after
-      content: ''
-      position: absolute
-      bottom: -2px
-      left: 0
-      display: inline-block
-      width: 0
-      height: 1px
-      background-color: #cccccc
-      transition: 1s ease
-    &:hover::after
-      width: 100%
+    &:hover
+      opacity: 0.7
       
 .sticky__text
   color: #888888
@@ -50,7 +40,7 @@
 .sticky
 	display: flex
 	justify-content: space-between
-	width: 1080px
+	width: 555px
 	height: 779px
 	background-color: #ffffff
 	border: 1px solid #eee
@@ -58,7 +48,7 @@
 	left: 0
 	top: 0
 	z-index: 2
-	transform: translateX(-1000px)
+	transform: translateX(-475px)
 	transition: 1.2s ease
 	&-active
 		transform: translateX(0)
@@ -85,7 +75,6 @@
 		height: 60px
 		position: relative
 		left: 10px
-		top: 31px
 		justify-content: flex-start
 		& span
 			margin: 0
@@ -138,7 +127,14 @@
 		width: 20px
 		height: 20px
 
-
+.sticky__burger span
+  top: 30px
+.sticky__burger-active
+  left: -15px
+.sticky__text
+  &:hover
+    font-size: 14px
+    transition: 0.2s
 .content
 	display: flex
 	flex-direction: column
@@ -184,7 +180,7 @@
 
 
 .sticky__content.content.content-active
-  padding-left: 390px
+  padding-left: 100px
 img.sticky__instagram,
 img.sticky__whatsapp 
   transition: 0.5s

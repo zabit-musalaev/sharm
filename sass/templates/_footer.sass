@@ -30,10 +30,12 @@
     margin-bottom: 25px
   &__icon
     transition: 0.5s
+    width: 25px
+    opacity: 0.6
     &:not(:last-child)
       margin-right: 20px
     &:hover
-      opacity: 0.5
+      opacity: 1
   &__phones
     display: flex
     justify-content: center
@@ -43,7 +45,10 @@
     font-size: 20px
     font-weight: 500
     & a
+      transition: 0.4s ease
       color: #333333
+      &:hover
+        text-shadow: 2px 4px 3px rgba(0,0,0,0.3)
   &__adress
     display: flex
     justify-content: center
