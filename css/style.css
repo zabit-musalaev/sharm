@@ -1199,7 +1199,16 @@ img.sticky__whatsapp {
       padding: 0 10px;
       width: 100%; }
     .ipad__more {
-      margin-left: 10px; } }
+      margin-left: 10px; }
+  .album__wrap {
+    margin-left: 10px; }
+  .album__card-3 {
+    display: none; }
+  .album__title {
+    margin-left: 10px; }
+  .feed__pagination {
+    margin-right: 25px;
+    margin-bottom: 10px; } }
 
 @media screen and (max-width: 568px) {
   .vasilenko__bottom-line {
@@ -1358,6 +1367,8 @@ img.sticky__whatsapp {
     margin-bottom: 12px; }
   .ipad__more {
     font-size: 10px; }
+  .album__wrap {
+    flex-wrap: wrap; }
   .feed__head {
     margin-bottom: 20px; }
   .feed__card {
