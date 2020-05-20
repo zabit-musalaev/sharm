@@ -61,8 +61,10 @@
       display: none
   .footer
     &__copyrightes
+      display: block
       text-align: center
       padding: 0 10px
+
     &__adress
       padding-left: 10px
       padding-right: 10px
@@ -88,7 +90,9 @@
 
   
 @media screen and ( max-width: 768px )
-  
+  section
+    margin-left: 10px
+    margin-right: 10px
   .header
     margin-bottom: 15px
     &__buttons
@@ -195,7 +199,6 @@
     &__img-3
       max-width: initial
       width: 100%
-      border: 5px solid #fff
     &__images
       & img
         position: static
@@ -240,10 +243,16 @@
     &__wrap
       padding-top: 50px
       padding-bottom: 50px
+      & a
+        margin-right: 10px
     &__inner
       & span
         width: 60px
         right: 10px
+    &__img
+      width: 100%
+    &__link
+      margin-right: 5px
 
   .footer
     &__phones

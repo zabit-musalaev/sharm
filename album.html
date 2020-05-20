@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Фотоальбом</title>
 </head>
@@ -53,7 +54,7 @@
 
     <div class="container">
       <div class="header__wrapper">
-        <a href="index.html"><img src="img/logo.png" alt="" class="header__logo  wow slideInLeft"></a>
+        <a href="index.html"><img src="img/logo.png" alt="" class="header__logo--sm  wow slideInLeft"></a>
         <div class="header__right-wrap">
           <nav class="menu">
             <ul>
@@ -87,25 +88,25 @@
       <div class="album__wrap">
         <div class="album__card">
           <div class="album__pic">
-            <img src="img/album/album-rect-1.jpg" alt="" class="album__img">
+            <a href="img/album/album-rect-1.jpg" data-lightbox="roadtrip"><img src="img/album/album-rect-1.jpg" alt="" class="album__img"></a>
             <p class="album__name">Небольшое описание фотографии, возможно в 2 строки</p>
           </div>
           <div class="album__pic"> 
-            <img src="img/album/album-rect-2.jpg" alt="" class="album__img">
+            <a href="img/album/album-rect-2.jpg" data-lightbox="roadtrip"><img src="img/album/album-rect-2.jpg" alt="" class="album__img"></a>
             <p class="album__name">Небольшое описание фотографии</p>
           </div>
         </div>
         <!-- /.feed__card -->
       <div class="album__wrap">
         <div class="album__card">
-          <img src="img/album/album-rect-2.jpg" alt="" class="album__img">
+          <a href="img/album/album-rect-2.jpg" data-lightbox="roadtrip"><img src="img/album/album-rect-2.jpg" alt="" class="album__img"></a>
           <p class="album__name">Небольшое описание фотографии</p>
-          <img src="img/album/album-rect-3.jpg" alt="" class="album__img">
+          <a href="img/album/album-rect-3.jpg" data-lightbox="roadtrip"><img src="img/album/album-rect-3.jpg" alt="" class="album__img"></a>
           <p class="album__name">Небольшое описание фотографии, возможно в 2 строки</p>
         </div>
         <!-- /.feed__card -->
         <div class="album__card album__card-3 ">
-          <img src="img/album/album-rect-3.jpg" alt="" class="album__img">
+          <a href="img/album/album-rect-3.jpg" data-lightbox="roadtrip"><img src="img/album/album-rect-3.jpg" alt="" class="album__img"></a>
           <p class="album__name">Небольшое описание фотографии, возможно в 2 строки</p>
         </div>
         <!-- /.feed__card -->
@@ -192,6 +193,7 @@
   <script src="js/wow.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/lightbox-plus-jquery.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
