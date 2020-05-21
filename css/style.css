@@ -155,8 +155,8 @@ body {
     max-width: 154px;
     padding-top: 10px; }
     .header__logo--sm {
-      max-width: 105px;
-      padding-top: 50px;
+      max-width: 103px;
+      padding-top: 10px;
       margin-left: 10px; }
   .header__right-wrap {
     display: flex;
@@ -337,7 +337,8 @@ body {
 img.sticky__instagram,
 img.sticky__whatsapp {
   transition: 0.5s;
-  opacity: 0.5; }
+  opacity: 0.5;
+  width: 20px; }
   img.sticky__instagram:hover,
   img.sticky__whatsapp:hover {
     opacity: 1; }
@@ -791,15 +792,18 @@ section.contacts {
   max-width: 1140px;
   margin-bottom: 30px;
   margin-right: 10px;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding: 20px;
+  border: 1px solid #999999;
+  border-radius: 5px; }
 
 .feedform__input {
-  padding: 20px 10px;
+  padding: 10px 10px;
   width: 100%;
   margin-bottom: 20px;
   font-size: 18px;
   border: 1px solid #999999;
-  border-radius: 10px; }
+  border-radius: 5px; }
   .feedform__input::-webkit-input-placeholder {
     font-size: 18px; }
   .feedform__input::-moz-placeholder {
@@ -834,7 +838,8 @@ section.contacts {
 
 .feedform__label {
   font-family: Montserrat;
-  font-size: 24px;
+  font-weight: 900;
+  font-size: 18px;
   margin-bottom: 10px; }
 
 .feedform__button {
@@ -1137,6 +1142,8 @@ section.contacts {
       display: none; }
     .header__logo {
       margin-left: 10px; }
+    .header__logo--sm {
+      display: none; }
     .header__logo {
       display: none; }
   .hero {
@@ -1294,9 +1301,14 @@ section.contacts {
     font-size: 20px; }
   .social__text {
     margin-right: 90px; }
+  .social__link-1.title,
+  .social__link-2.title {
+    font-size: 24px; }
   .questions__description {
     width: 420px;
     margin-right: 30px; }
+  .questions__wrap {
+    margin-bottom: 80px; }
   .form {
     margin-right: 0; }
   .ipad {
