@@ -1176,6 +1176,8 @@ section.contacts {
       margin-right: 28px;
       -webkit-transform: rotate(0);
       transform: rotate(0); }
+      .sticky__text-active {
+        display: none; }
     .sticky__content {
       position: absolute;
       opacity: 1;
@@ -1196,6 +1198,8 @@ section.contacts {
           left: 12px; }
     .sticky__social {
       display: flex; }
+      .sticky__social-active {
+        display: none; }
     .sticky__item {
       margin-right: 20px; }
     .sticky__social-cnt {
@@ -1461,7 +1465,8 @@ section.contacts {
     .content__logo {
       width: 80px;
       height: 90px;
-      margin-left: 15px; }
+      margin-left: 15px;
+      margin-top: 10px; }
     .content__menu {
       margin-left: 20px; }
     .content__buttons {
@@ -1485,8 +1490,7 @@ section.contacts {
     .sticky__burger {
       left: 0; }
       .sticky__burger-active {
-        left: 75%;
-        top: 20px; }
+        left: 85%; }
   .ipad__heading {
     align-items: flex-start;
     margin-bottom: 20px; }
